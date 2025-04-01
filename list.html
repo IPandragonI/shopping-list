@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image" href="/shops.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="./style.css" rel="stylesheet">
+    <script type="module" src="/src/list.js"></script>
+    <title>Shopping list</title>
+</head>
+<body>
+<header class="navbar bg-base-100 shadow-sm px-8">
+    <div class="flex-1">
+        <a class="text-xl font-bold">🛒 Shopping list</a>
+    </div>
+    <div class="flex-none">
+        <a class="hover:text-accent hover:cursor-pointer" href="index.html">Produits disponibles</a>
+    </div>
+</header>
+<section class="p-8">
+    <div class="navbar">
+        <h1 class="text-2xl font-bold mr-5">📝 Ma liste de course</h1>
+    </div>
+
+    <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Produit</th>
+                <th>PU (€)</th>
+                <th>Quantité</th>
+                <th>Sous-total</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="liste-course-body">
+            </tbody>
+        </table>
+    </div>
+
+    <div class="flex justify-between mt-8">
+        <h2 id="total-general" class="text-xl font-bold"></h2>
+        <button class="btn btn-outline btn-error" id="vider-liste">Vider la liste</button>
+    </div>
+
+</section>
+<footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4 fixed bottom-0 w-full">
+    <aside>
+        <p>Copyright © 2025 - All right reserved by Mathys Farineau</p>
+    </aside>
+</footer>
+</body>
+</html>
