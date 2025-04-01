@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             name.innerHTML = '<p class="font-bold">' + item.nom + '</p>';
             price.textContent = item.prix_unitaire;
-            quantity.innerHTML = '<input class="input w-1/3" type="number" value="' + item.quantite + '">';
+            quantity.innerHTML = '<input class="input w-1/3" type="number" value=' + item.quantite + '>';
             totalPrice.textContent = (item.quantite * item.prix_unitaire).toFixed(2);
             removeButton.innerHTML = '<button class="btn btn-error">SUPPRIMER</button>';
 

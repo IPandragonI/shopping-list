@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fetchProducts = async () => {
         try {
-            const response = await fetch('/public/products-list.json');
+            const response = await fetch('/products-list.json');
             return await response.json();
         } catch (error) {
             console.error('Error fetching products:', error);
@@ -17,19 +17,25 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const renderProducts = (products) => {
+        const list = JSON.parse(localStorage.getItem('list')) || [];
         productList.innerHTML = '';
         productNumber.innerHTML = `<p class="text-center">${products.length} produits</p>`;
         products.forEach(product => {
             const li = document.createElement('li');
-            li.classList.add('card', 'shadow-sm', 'p-6', 'mb-5', 'bg-white', 'rounded-xl');
-
+            li.classList.add('card', 'shadow-sm', 'p-6', 'mb-5', 'bg-white', 'rounded-xl', 'hover:shadow-lg', 'transition-shadow', 'duration-300');
+            const quantityTaken = list.find(item => item.nom === product.nom)?.quantite || 0;
+            const quantityCount = product.quantite_stock - quantityTaken;
+            const addToList = document.createElement('button')
+            if (quantityCount === 0) {
+                li.classList.add('opacity-50');
+                addToList.disabled = true;
+            }
             const title = document.createElement('h2');
             const quantity = document.createElement('p');
             const price = document.createElement('p');
-            const addToList = document.createElement('button');
 
             title.innerHTML = `<h2 class="card-title my-1 text-xl">${product.nom}</h2>`;
-            quantity.innerHTML = `<p class="my-1"><strong>Quantité : </strong>${product.quantite_stock}</p>`;
+            quantity.innerHTML = `<p class="my-1"><strong>Quantité : </strong>${quantityCount}</p>`;
             price.innerHTML = `<p class="my-1"><strong>Prix : </strong>${product.prix_unitaire}€</p>`;
             addToList.innerHTML = `<button type="button" class="btn btn-secondary mt-5" data-id="${product.nom}">Ajouter à la liste</button>`;
 
@@ -37,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const list = JSON.parse(localStorage.getItem('list')) || [];
                 const productInCart = list.find(item => item.nom === product.nom);
                 if (productInCart) {
-                    productInCart.quantite += 1;
+                    productInCart.quantite = parseInt(productInCart.quantite) + 1;
                 } else {
                     list.push({...product, quantite: 1});
                 }
@@ -46,6 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     addToList.innerHTML = `<button type="button" class="btn btn-secondary mt-5" data-id="${product.nom}">Ajouter à la liste</button>`;
                 }, 2000);
+                const quantityTaken = list.find(item => item.nom === product.nom)?.quantite || 0;
+                const quantityCount = product.quantite_stock - quantityTaken;
+                quantity.innerHTML = `<p class="my-1"><strong>Quantité : </strong>${quantityCount}</p>`;
+
+                if (quantityCount === 0) {
+                    li.classList.add('opacity-50');
+                    addToList.disabled = true;
+                }
             });
 
             li.appendChild(title);
