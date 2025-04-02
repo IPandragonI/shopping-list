@@ -1,7 +1,7 @@
 import {describe, expect, test} from '@jest/globals';
 import {fetchProducts, filterProducts, sortProducts, handleAddToList} from '../src/main.js';
 
-describe('afficherProduits', () => {
+describe('Affichage des produits', () => {
     test('Retourne un tableau de produits', async () => {
         const products = await fetchProducts();
         expect(Array.isArray(products)).toBe(true);
