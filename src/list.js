@@ -19,7 +19,7 @@ export const createRow = (item, list) => {
     totalPrice.textContent = (item.quantite * item.prix_unitaire).toFixed(2);
     removeButton.innerHTML = '<button class="btn btn-error">SUPPRIMER</button>';
 
-    quantity.addEventListener('change', (e) => handleQuantityChange(e, item, list, totalPrice, total));
+    quantity.addEventListener('input', (e) => handleQuantityChange(e, item, list, totalPrice, total));
     removeButton.addEventListener('click', () => handleRemoveItem(item, list, row, tableBody, total));
 
     row.appendChild(name);

@@ -28,9 +28,9 @@ export const createProductElement = (product, list) => {
     const price = document.createElement('p');
     const addToList = document.createElement('button');
 
-    title.innerHTML = `<h2 class="card-title my-1 text-xl">${product.nom}</h2>`;
+    title.innerHTML = `<h2 class="card-title product-name my-1 text-xl">${product.nom}</h2>`;
     quantity.innerHTML = `<p class="my-1"><strong>Quantité : </strong>${quantityCount}</p>`;
-    price.innerHTML = `<p class="my-1"><strong>Prix : </strong>${product.prix_unitaire}€</p>`;
+    price.innerHTML = `<p class="my-1 product-price"><strong>Prix : </strong>${product.prix_unitaire}€</p>`;
     addToList.innerHTML = `<button type="button" class="btn btn-secondary mt-5" data-id="${product.nom}">Ajouter à la liste</button>`;
 
     if (quantityCount === 0) {
