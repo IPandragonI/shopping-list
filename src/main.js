@@ -8,7 +8,7 @@ export const localStorage = window.localStorage;
 
 export const fetchProducts = async () => {
     try {
-        const response = await fetch(`${import.meta.env.BASE_URL}products-list.json`);
+        const response = await fetch(`/products-list.json`);
         return await response.json();
     } catch (error) {
         console.error('Error fetching products:', error);
@@ -62,18 +62,23 @@ export const renderProducts = (products) => {
 export const handleAddToList = (product, addToList, quantity, li) => {
     const list = JSON.parse(localStorage.getItem('list')) || [];
     const productInCart = list.find(item => item.nom === product.nom);
-    if (productInCart) {
-        productInCart.quantite = parseInt(productInCart.quantite) + 1;
+    debugger
+   if (productInCart) {
+        productInCart.quantite = Math.min(product.quantite_stock, (productInCart.quantite || 0) + 1);
     } else {
         list.push({...product, quantite: 1});
     }
+
     localStorage.setItem('list', JSON.stringify(list));
+
     addToList.innerHTML = '<button type="button" class="btn btn-active btn-primary mt-5" data-id="${product.nom}">Produit ajouté !</button>';
     setTimeout(() => {
         addToList.innerHTML = `<button type="button" class="btn btn-secondary mt-5" data-id="${product.nom}">Ajouter à la liste</button>`;
     }, 500);
+
     const quantityTaken = list.find(item => item.nom === product.nom)?.quantite || 0;
     const quantityCount = product.quantite_stock - quantityTaken;
+
     quantity.innerHTML = `<p class="my-1"><strong>Quantité : </strong>${quantityCount}</p>`;
 
     if (quantityCount === 0) {

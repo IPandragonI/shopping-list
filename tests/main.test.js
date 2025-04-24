@@ -66,23 +66,23 @@ describe('Filtres et tri', () => {
 
 describe('Ajout au localStorage', () => {
     test('Ajoute un produit à la liste', () => {
-        const product = {nom: 'Produit 1'};
+        const product = {nom: 'Produit 1', quantite_stock: 10};
         const addToList = document.createElement('button');
         const quantity = document.createElement('p');
         const li = document.createElement('li');
         handleAddToList(product, addToList, quantity, li);
         const list = JSON.parse(localStorage.getItem('list'));
-        expect(list).toEqual([{nom: 'Produit 1', quantite: 1}]);
+        expect(list).toEqual([{nom: 'Produit 1', quantite_stock: 10, quantite: 1}]);
     });
 
     test('Incrémente la quantité d\'un produit déjà dans la liste', () => {
-        const product = {nom: 'Produit 1'};
+        const product = {nom: 'Produit 1', quantite_stock: 10};
         const addToList = document.createElement('button');
         const quantity = document.createElement('p');
         const li = document.createElement('li');
         handleAddToList(product, addToList, quantity, li);
         handleAddToList(product, addToList, quantity, li);
         const list = JSON.parse(localStorage.getItem('list'));
-        expect(list).toEqual([{nom: 'Produit 1', quantite: 2}]);
+        expect(list).toEqual([{nom: 'Produit 1', quantite_stock: 10, quantite: 3}]);
     });
 });
