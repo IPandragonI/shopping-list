@@ -8,6 +8,7 @@ export const localStorage = window.localStorage;
 
 export const fetchProducts = async () => {
     try {
+        console.log(import.meta.env.BASE_URL);
         const response = await fetch(`${import.meta.env.BASE_URL}/products-list.json`);
         return await response.json();
     } catch (error) {
