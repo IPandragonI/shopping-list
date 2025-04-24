@@ -1,0 +1,492 @@
+[
+  {
+    "nom": "Pomme",
+    "quantite_stock": 29,
+    "prix_unitaire": 12.74
+  },
+  {
+    "nom": "Banane",
+    "quantite_stock": 172,
+    "prix_unitaire": 14.73
+  },
+  {
+    "nom": "Carotte",
+    "quantite_stock": 171,
+    "prix_unitaire": 15.84
+  },
+  {
+    "nom": "Lait",
+    "quantite_stock": 56,
+    "prix_unitaire": 2.52
+  },
+  {
+    "nom": "Pain",
+    "quantite_stock": 81,
+    "prix_unitaire": 14.41
+  },
+  {
+    "nom": "Riz",
+    "quantite_stock": 118,
+    "prix_unitaire": 22.38
+  },
+  {
+    "nom": "Pâtes",
+    "quantite_stock": 124,
+    "prix_unitaire": 9.7
+  },
+  {
+    "nom": "Tomate",
+    "quantite_stock": 104,
+    "prix_unitaire": 3.59
+  },
+  {
+    "nom": "Oignon",
+    "quantite_stock": 94,
+    "prix_unitaire": 4.31
+  },
+  {
+    "nom": "Ail",
+    "quantite_stock": 106,
+    "prix_unitaire": 17.38
+  },
+  {
+    "nom": "Poulet",
+    "quantite_stock": 79,
+    "prix_unitaire": 13.59
+  },
+  {
+    "nom": "Boeuf",
+    "quantite_stock": 86,
+    "prix_unitaire": 8.25
+  },
+  {
+    "nom": "Jambon",
+    "quantite_stock": 132,
+    "prix_unitaire": 4.51
+  },
+  {
+    "nom": "Yaourt",
+    "quantite_stock": 190,
+    "prix_unitaire": 7.84
+  },
+  {
+    "nom": "Fromage",
+    "quantite_stock": 44,
+    "prix_unitaire": 10.39
+  },
+  {
+    "nom": "Beurre",
+    "quantite_stock": 164,
+    "prix_unitaire": 3.09
+  },
+  {
+    "nom": "Œufs",
+    "quantite_stock": 130,
+    "prix_unitaire": 12.73
+  },
+  {
+    "nom": "Farine",
+    "quantite_stock": 71,
+    "prix_unitaire": 19.87
+  },
+  {
+    "nom": "Sucre",
+    "quantite_stock": 64,
+    "prix_unitaire": 12.59
+  },
+  {
+    "nom": "Sel",
+    "quantite_stock": 199,
+    "prix_unitaire": 0.7
+  },
+  {
+    "nom": "Poivre",
+    "quantite_stock": 39,
+    "prix_unitaire": 21.62
+  },
+  {
+    "nom": "Thé",
+    "quantite_stock": 161,
+    "prix_unitaire": 10.56
+  },
+  {
+    "nom": "Café",
+    "quantite_stock": 32,
+    "prix_unitaire": 24.04
+  },
+  {
+    "nom": "Jus d'orange",
+    "quantite_stock": 121,
+    "prix_unitaire": 12.12
+  },
+  {
+    "nom": "Eau minérale",
+    "quantite_stock": 83,
+    "prix_unitaire": 1.19
+  },
+  {
+    "nom": "Céréales",
+    "quantite_stock": 136,
+    "prix_unitaire": 10.11
+  },
+  {
+    "nom": "Biscuits",
+    "quantite_stock": 163,
+    "prix_unitaire": 8.62
+  },
+  {
+    "nom": "Chocolat",
+    "quantite_stock": 174,
+    "prix_unitaire": 7.92
+  },
+  {
+    "nom": "Confiture",
+    "quantite_stock": 41,
+    "prix_unitaire": 8.71
+  },
+  {
+    "nom": "Miel",
+    "quantite_stock": 28,
+    "prix_unitaire": 14.92
+  },
+  {
+    "nom": "Huile d'olive",
+    "quantite_stock": 82,
+    "prix_unitaire": 23.63
+  },
+  {
+    "nom": "Huile de tournesol",
+    "quantite_stock": 168,
+    "prix_unitaire": 18.26
+  },
+  {
+    "nom": "Vinaigre",
+    "quantite_stock": 57,
+    "prix_unitaire": 15.95
+  },
+  {
+    "nom": "Moutarde",
+    "quantite_stock": 142,
+    "prix_unitaire": 15.01
+  },
+  {
+    "nom": "Ketchup",
+    "quantite_stock": 187,
+    "prix_unitaire": 12.43
+  },
+  {
+    "nom": "Mayonnaise",
+    "quantite_stock": 120,
+    "prix_unitaire": 17.57
+  },
+  {
+    "nom": "Lentilles",
+    "quantite_stock": 151,
+    "prix_unitaire": 4.94
+  },
+  {
+    "nom": "Haricots",
+    "quantite_stock": 10,
+    "prix_unitaire": 5.6
+  },
+  {
+    "nom": "Pois chiches",
+    "quantite_stock": 97,
+    "prix_unitaire": 10.05
+  },
+  {
+    "nom": "Maïs",
+    "quantite_stock": 76,
+    "prix_unitaire": 11.12
+  },
+  {
+    "nom": "Champignons",
+    "quantite_stock": 123,
+    "prix_unitaire": 11.05
+  },
+  {
+    "nom": "Épinards",
+    "quantite_stock": 37,
+    "prix_unitaire": 12.8
+  },
+  {
+    "nom": "Courgette",
+    "quantite_stock": 194,
+    "prix_unitaire": 21.89
+  },
+  {
+    "nom": "Aubergine",
+    "quantite_stock": 147,
+    "prix_unitaire": 11.32
+  },
+  {
+    "nom": "Brocoli",
+    "quantite_stock": 167,
+    "prix_unitaire": 12.66
+  },
+  {
+    "nom": "Chou-fleur",
+    "quantite_stock": 168,
+    "prix_unitaire": 24.57
+  },
+  {
+    "nom": "Poireau",
+    "quantite_stock": 191,
+    "prix_unitaire": 5.33
+  },
+  {
+    "nom": "Salade",
+    "quantite_stock": 98,
+    "prix_unitaire": 7.23
+  },
+  {
+    "nom": "Radis",
+    "quantite_stock": 10,
+    "prix_unitaire": 10.21
+  },
+  {
+    "nom": "Navet",
+    "quantite_stock": 128,
+    "prix_unitaire": 23.06
+  },
+  {
+    "nom": "Pomme de terre",
+    "quantite_stock": 187,
+    "prix_unitaire": 6.75
+  },
+  {
+    "nom": "Orange",
+    "quantite_stock": 64,
+    "prix_unitaire": 19.83
+  },
+  {
+    "nom": "Citron",
+    "quantite_stock": 136,
+    "prix_unitaire": 22.65
+  },
+  {
+    "nom": "Pêche",
+    "quantite_stock": 79,
+    "prix_unitaire": 24.67
+  },
+  {
+    "nom": "Raisin",
+    "quantite_stock": 166,
+    "prix_unitaire": 17.14
+  },
+  {
+    "nom": "Fraise",
+    "quantite_stock": 108,
+    "prix_unitaire": 4.94
+  },
+  {
+    "nom": "Framboise",
+    "quantite_stock": 40,
+    "prix_unitaire": 17.82
+  },
+  {
+    "nom": "Cerise",
+    "quantite_stock": 145,
+    "prix_unitaire": 24.96
+  },
+  {
+    "nom": "Ananas",
+    "quantite_stock": 107,
+    "prix_unitaire": 10
+  },
+  {
+    "nom": "Mangue",
+    "quantite_stock": 89,
+    "prix_unitaire": 1.77
+  },
+  {
+    "nom": "Papaye",
+    "quantite_stock": 129,
+    "prix_unitaire": 24.12
+  },
+  {
+    "nom": "Avocat",
+    "quantite_stock": 100,
+    "prix_unitaire": 13.81
+  },
+  {
+    "nom": "Kiwi",
+    "quantite_stock": 81,
+    "prix_unitaire": 8.15
+  },
+  {
+    "nom": "Pastèque",
+    "quantite_stock": 158,
+    "prix_unitaire": 24.93
+  },
+  {
+    "nom": "Melon",
+    "quantite_stock": 132,
+    "prix_unitaire": 11.02
+  },
+  {
+    "nom": "Abricot",
+    "quantite_stock": 93,
+    "prix_unitaire": 11.31
+  },
+  {
+    "nom": "Noix",
+    "quantite_stock": 182,
+    "prix_unitaire": 16.02
+  },
+  {
+    "nom": "Amande",
+    "quantite_stock": 81,
+    "prix_unitaire": 9.95
+  },
+  {
+    "nom": "Noisette",
+    "quantite_stock": 34,
+    "prix_unitaire": 14.44
+  },
+  {
+    "nom": "Lait d'amande",
+    "quantite_stock": 196,
+    "prix_unitaire": 2.01
+  },
+  {
+    "nom": "Lait de soja",
+    "quantite_stock": 199,
+    "prix_unitaire": 18.53
+  },
+  {
+    "nom": "Tofu",
+    "quantite_stock": 151,
+    "prix_unitaire": 23.84
+  },
+  {
+    "nom": "Crème fraîche",
+    "quantite_stock": 119,
+    "prix_unitaire": 4.72
+  },
+  {
+    "nom": "Crème dessert",
+    "quantite_stock": 166,
+    "prix_unitaire": 15.91
+  },
+  {
+    "nom": "Glace",
+    "quantite_stock": 24,
+    "prix_unitaire": 10.47
+  },
+  {
+    "nom": "Sorbet",
+    "quantite_stock": 82,
+    "prix_unitaire": 10.68
+  },
+  {
+    "nom": "Savon",
+    "quantite_stock": 24,
+    "prix_unitaire": 19.7
+  },
+  {
+    "nom": "Shampoing",
+    "quantite_stock": 198,
+    "prix_unitaire": 23.35
+  },
+  {
+    "nom": "Gel douche",
+    "quantite_stock": 18,
+    "prix_unitaire": 23.52
+  },
+  {
+    "nom": "Dentifrice",
+    "quantite_stock": 181,
+    "prix_unitaire": 17.77
+  },
+  {
+    "nom": "Brosse à dents",
+    "quantite_stock": 24,
+    "prix_unitaire": 21.75
+  },
+  {
+    "nom": "Papier toilette",
+    "quantite_stock": 99,
+    "prix_unitaire": 21.95
+  },
+  {
+    "nom": "Essuie-tout",
+    "quantite_stock": 16,
+    "prix_unitaire": 5.62
+  },
+  {
+    "nom": "Lessive",
+    "quantite_stock": 26,
+    "prix_unitaire": 4.9
+  },
+  {
+    "nom": "Adoucissant",
+    "quantite_stock": 54,
+    "prix_unitaire": 8.65
+  },
+  {
+    "nom": "Produit vaisselle",
+    "quantite_stock": 15,
+    "prix_unitaire": 24.56
+  },
+  {
+    "nom": "Éponge",
+    "quantite_stock": 177,
+    "prix_unitaire": 2.92
+  },
+  {
+    "nom": "Sac poubelle",
+    "quantite_stock": 85,
+    "prix_unitaire": 19.46
+  },
+  {
+    "nom": "Aluminium",
+    "quantite_stock": 120,
+    "prix_unitaire": 17.74
+  },
+  {
+    "nom": "Film plastique",
+    "quantite_stock": 36,
+    "prix_unitaire": 17.86
+  },
+  {
+    "nom": "Serviettes en papier",
+    "quantite_stock": 145,
+    "prix_unitaire": 22.24
+  },
+  {
+    "nom": "Bougies",
+    "quantite_stock": 172,
+    "prix_unitaire": 24.92
+  },
+  {
+    "nom": "Allumettes",
+    "quantite_stock": 114,
+    "prix_unitaire": 16.69
+  },
+  {
+    "nom": "Briquet",
+    "quantite_stock": 160,
+    "prix_unitaire": 5.89
+  },
+  {
+    "nom": "Bouteille de gaz",
+    "quantite_stock": 13,
+    "prix_unitaire": 1.31
+  },
+  {
+    "nom": "Pile",
+    "quantite_stock": 156,
+    "prix_unitaire": 14.32
+  },
+  {
+    "nom": "Ampoule",
+    "quantite_stock": 110,
+    "prix_unitaire": 20.9
+  },
+  {
+    "nom": "Lampe torche",
+    "quantite_stock": 181,
+    "prix_unitaire": 16.08
+  }
+]
