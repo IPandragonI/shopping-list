@@ -6,27 +6,55 @@ on:
       - main
 
 jobs:
-  deploy:
+  unit-tests:
+    name: Unit Tests
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 22.x
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
+      - name: Run unit tests
         run: npm test
 
-      - name: Build project
-        run: npm run build
+  functional-tests:
+    runs-on: ubuntu-latest
+    needs: unit-tests
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22.x
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Cypress
+        run: npm install cypress
+
+      - name: Start the application
+        run: npm run dev &
+        env:
+          CI: false
+
+      - name: Run functional tests with Cypress
+        run: npx cypress run
+
+  deploy:
+    name: Deploy
+    needs: functional-tests
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
