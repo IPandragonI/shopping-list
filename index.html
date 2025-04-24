@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image" href="/shopping-list/shops.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Shopping list</title>
+  <script type="module" crossorigin src="/shopping-list/assets/main-DcRuCkJe.js"></script>
+  <link rel="modulepreload" crossorigin href="/shopping-list/assets/style-Bmac666u.js">
+  <link rel="stylesheet" crossorigin href="/shopping-list/assets/style-Brzo_yp5.css">
+</head>
+<body>
+<header class="navbar bg-base-100 shadow-sm px-8">
+    <div class="flex-1">
+        <a class="text-xl font-bold cursor-pointer" href="index.html">🛒 Shopping list</a>
+    </div>
+    <div class="flex-none">
+        <a class="hover:text-accent hover:cursor-pointer" id="liste-course" href="list.html">Liste de course</a>
+    </div>
+</header>
+<section class="p-8">
+    <div class="navbar">
+        <div class="navbar-start">
+            <h1 class="text-2xl font-bold mr-5">Produits disponibles</h1>
+            <div class="badge badge-secondary font-bold" id="compteur-produits"></div>
+        </div>
+        <div class="navbar-end space-x-4">
+            <label class="input">
+                <input id="recherche" type="search" required placeholder="Rechercher un produit ..."/>
+            </label>
+            <div class="dropdown">
+                <label for="tri"></label>
+                <select name="sort" id="tri" class="select select-bordered">
+                    <option value="">🔽 Trier par</option>
+                    <option value="nom">Nom</option>
+                    <option value="prix">Prix</option>
+                </select>
+            </div>
+            <button class="btn btn-outline" id="reset-filtres">REINITIALISER</button>
+        </div>
+    </div>
+
+    <ul id="liste-produits" class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+    </ul>
+</section>
+<footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+    <aside>
+        <p>Copyright © 2025 - All right reserved by Mathys Farineau</p>
+    </aside>
+</footer>
+</body>
+</html>
