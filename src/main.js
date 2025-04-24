@@ -8,7 +8,7 @@ export const localStorage = window.localStorage;
 
 export const fetchProducts = async () => {
     try {
-        const response = await fetch('/products-list.json');
+        const response = await fetch(`${import.meta.env.BASE_URL}/products-list.json`);
         return await response.json();
     } catch (error) {
         console.error('Error fetching products:', error);
